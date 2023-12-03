@@ -1,0 +1,34 @@
+<%- include('./partials/cabecero'); %>
+
+    <%- include('./partials/navegador'); %>
+
+        <div class="container">
+            <h1>
+                <%= h1 %>
+            </h1>
+            <div id="map" class="map"></div>
+            <div id="mouse-position"></div>
+            <div id="info"></div>
+            <br>
+            <div id="oculto" style="visibility: hidden;">
+                <table class="table table-success table-striped-columns">
+                    <thead id="th_p">
+                        <tr>
+                            <th id="th1"></th>
+                            <th id="th2"></th>
+                            <th id="th3"></th>
+                            <th id="th4"></th>
+                        </tr>
+                    <tbody id="tabla-atributos">
+
+                    </tbody>
+
+                    </thead>
+
+                </table>
+            </div>
+        </div>
+
+        <script type="module" src="/public/<%= script %>"></script>
+
+        <%- include('partials/pie'); %>

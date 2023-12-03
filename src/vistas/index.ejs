@@ -1,0 +1,88 @@
+<!--aca se insertan los pedazos de codigo que se repiten en todas las paginas-->
+<%- include('./partials/cabecero'); %>
+
+
+    <%- include('./partials/navegador'); %>
+        <div class="container">
+            <br>
+            <!-- estos son tarjetas de presentación donde mostraremos información adicional,
+                     ademas los pondremos en posición una tras de otra con ayuda de boostrap y su clase row -->
+            <div class="row justify-content-start">
+                <div class="col-3">
+                    <div class="card text-bg-info mb-3" style="max-width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">¿Que es la informalidad?</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi, ab, veritatis ipsam provident corporis possimus quae
+                                placeat facere tempore voluptatibus consequuntur, ullam error!
+                                Assumenda, libero consequatur. Possimus corrupti deleniti ex.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi, ab, veritatis ipsam provident corporis possimus quae
+                                placeat facere tempore voluptatibus consequuntur, ullam error!
+                                Assumenda, libero consequatur. Possimus corrupti deleniti ex.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">información adicional</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi, ab, veritatis ipsam provident corporis possimus quae
+                                placeat facere tempore voluptatibus consequuntur, ullam error!
+                                Assumenda, libero consequatur. Possimus corrupti deleniti ex.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Quasi, ab, veritatis ipsam provident corporis possimus quae
+                                placeat facere tempore voluptatibus consequuntur, ullam error!
+                                Assumenda, libero consequatur. Possimus corrupti deleniti ex.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/img/invasion1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/invasion2.jfif" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/img/invasion3.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <%- include('partials/pie'); %>
